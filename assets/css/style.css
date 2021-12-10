@@ -1,114 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+         :root {
+            --blueAdw: #005db5;
+            --darkblueAdw: #004C95;
+            --blackAdw: #3a3a3a;
+        }
+        
+        * {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            color: var(--blackAdw);
+            position: relative;
+        }
 
-:root {
-    --blueAdw: #005db5;
-    --darkblueAdw: #004C95;
-    --blackAdw: #3a3a3a;
-  }
-  
-*{
-    font-family: 'Red Hat Display', sans-serif;
-}
-html{   
-    scroll-behavior: smooth;
-}
-body{
-    color: var(--blackAdw);
-    position: relative;
-}
+        .menu p {
+            font-size: 20px;
+        }
+        
+        .logo-container {
+            width: 90px;
+        }
+        
+        .menu-toggle i {
+            font-size: 29px;
+            color: var(--blackAdw);
+        }
+        
+        #hero {
+            background-color: white;
+            height: calc(80vh - 75.5px);
+        }
+        
+        .leaves-background {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 900px;
+            -webkit-user-drag: none;
+        }
+        
+        img{
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+        }
 
-.logo-container{
-    width:90px;
-}
-.menu-toggle i{
-    font-size:29px;
-    color: var(--blackAdw);
-}
+        .blue-ornament-about {
+            width: 100%;
+            -webkit-user-drag: none;
+        }
+        
+        .hero-text {
+            width: 1000px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        
+        .hero-text p:nth-of-type(1) {
+            color: var(--blueAdw);
+            margin-bottom: 0;
+            font-size: 35px;
+            font-weight: 800;
+        }
+        
+        .hero-text h1 {
+            font-weight: 800;
+            font-size: 75px;
+        }
+        
+        .py-menu {
+            padding-bottom: 150px;
+            padding-top: 150px;
+        }
+        
+        #about {
+            color: white;
+        }
+        
+        #about .menu-text {
+            background-color: var(--darkblueAdw);
+            width: 100%;
+        }
+        #about .menu-text *{
+            width: 800px;
+        }
+        .menu-text {
+            width: 1000px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        
+        .menu-number {
+            font-size: 75px;
+            font-weight: 800;
+            filter: opacity(.5);
+        }
+        
+        .menu-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        #personality {
+            background-image: url("../images/leaf-bg-1.jpg");
+            background-size: cover;
+            color: white;
+        }
+        .menu-text:not(:last-of-type){
+            margin-bottom: 70px;
+        }
 
-#hero{
-    background-color: white;
-    height: calc(80vh - 75.5px);
-}
-.leaves-background{
-    position:absolute;
-    right:0;
-    top:0;
-    width: 700px;
-    -webkit-user-drag: none;
-}
-.blue-ornament-about{
-    width: 100%;
-    -webkit-user-drag: none;
-}
-.hero-text {
-    width: 600px;
-}
-.hero-text p:nth-of-type(1){
-    color: var(--blueAdw);
-    margin-bottom: 0;
-    font-size:35px;
-    font-weight: 800;
-}
-.hero-text h1{
-    font-weight: 800;
-    font-size: 75px;
-}
-
-#about{
-    color: white;
-}
-#about .about-text{
-    background-color: var(--darkblueAdw);
-    
-}
-.about-text *{
-    width: 600px;
-}
-.menu-number{
-    font-size: 75px;
-    font-weight:800;
-    opacity: .7;
-}
-.menu-title{
-    font-size:50px;
-    font-weight:bold;
-}
-#sidebar{
-    position:fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 99;
-}
-
-#sidebar ul li a{
-    text-align: right;
-    color:#005db5;
-    font-size:26px;
-    font-weight: 600;
-    text-decoration: none;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all .2s ease-in;
-}
-#sidebar ul li a.active{
-    background-color: transparent;
-    opacity: 1 ;
-    transform: translateX(0%);
-}
-#sidebar ul li:hover a{
-    opacity: .8;
-    transform: translateX(0%);
-}
-#sidebar .nav-item{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    overflow: hidden;
-}
-.nav-indicator{
-    height: 30px;
-    width: 4px;
-    background-color: var(--blueAdw);
-    opacity:.5;
-}
+        #logos .menu-number{
+            color: var(--blueAdw);
+        }
+        
+        #sidebar {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 99;
+        }
+        
+        #sidebar ul li a {
+            text-align: right;
+            color: #005db5;
+            font-size: 26px;
+            font-weight: 600;
+            text-decoration: none;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all .2s ease-in;
+        }
+        
+        #sidebar ul li a.active {
+            background-color: transparent;
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        
+        #sidebar ul li:hover a {
+            opacity: .8;
+            transform: translateX(0%);
+        }
+        
+        #sidebar .nav-item {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .nav-indicator {
+            height: 30px;
+            width: 4px;
+            background-color: var(--blueAdw);
+            opacity: .5;
+        }
