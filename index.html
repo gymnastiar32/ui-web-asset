@@ -24,28 +24,64 @@
     <nav id="sidebar">
         <ul class="nav nav-pills d-flex flex-column ">
             <li class="nav-item">
-                <a class="nav-link active home" href="#hero">Home</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#about">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">01</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">About</span>
+                    </div>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#personality">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">02</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">Personality</span>
+                    </div>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#personality">Personality</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#logos">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">03</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">Logos and Usages</span>
+                    </div>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#color">Color</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#color">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">04</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">Color</span>
+                    </div>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#background">Background</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#background">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">05</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">Background</span>
+                    </div>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#typhography">Typhography</a>
-                <div class="nav-indicator"></div>
+                <a class="nav-link" href="#typhography">
+                    <div class="nav-indicator"></div>
+                    <div class="nav-text">
+                        <span class="nav-number">06</span>
+                        <span class="nav-line"></span>
+                        <span class="nav-name">Typhography</span>
+                    </div>
+                </a> 
             </li>
         </ul>
     </nav>
@@ -110,6 +146,65 @@
                     <img src="assets/images/logo-satu-warna.jpg" alt="">
                     <p class="px-3 py-1" data-aos="fade-right">Penggunaan logo satu warna hanya  dapat direalisasikan dengan menyesuaikan warna latar belakang dengan palet warna ADW. Logo satu warna sebaiknya hanya pada jalur warna biru dan putih.
                     </p>
+                </div>
+            </section>
+            <section class="menu-text">
+                <h2 class="menu-title" data-aos="fade-right" data-aos-delay="0">Kesalahan Penggunaan Logo</h2>
+                <div class="row mb-5" data-aos-delay="300">
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Potong Logo
+                        </p>
+                        <img src="assets/images/logo-cropped.jpg" alt="">
+                    </div>
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Gunakan Shadow atau Efek Apapun
+                        </p>
+                        <img src="assets/images/logo-efek.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mb-5" data-aos-delay="300">
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Ubah Tranparansi Logo
+                        </p>
+                        <img src="assets/images/logo-trans.jpg" alt="">
+                    </div>
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Membuat Ulang Logo dengan font yang Berbeda
+                        </p>
+                        <img src="assets/images/logo-font.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mb-5" data-aos-delay="300">
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Warna Logo kecuali Putih
+                        </p>
+                        <img src="assets/images/logo-color.jpg" alt="">
+                    </div>
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Warna Logo kecuali Putih
+                        </p>
+                        <img src="assets/images/logo-color2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mb-5" data-aos-delay="300">
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Mengubah Proposional Logo
+                        </p>
+                        <img src="assets/images/logo-propo.jpg" alt="">
+                    </div>
+                    <div class="col-6 logo-item">
+                        <p class="text-box">
+                            Jangan Mengubah Proposional Logo
+                        </p>
+                        <img src="assets/images/logo-propo2.jpg" alt="">
+                    </div>
                 </div>
             </section>
         </div>
@@ -195,9 +290,11 @@
             if (st > 300 && st < 2400) {
                 $(".nav-link").css("color", "#ffffff");
                 $(".nav-indicator").css("backgroundColor", "#ffffff");
+                $(".nav-line").css("backgroundColor", "#ffffff");
             } else {
                 $(".nav-link").css("color", "#005db5")
                 $(".nav-indicator").css("backgroundColor", "#005db5")
+                $(".nav-line").css("backgroundColor", "#005db5")
             }
             // changeToBlue = st;
 
